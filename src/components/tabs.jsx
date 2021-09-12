@@ -40,20 +40,20 @@ const FoodTabs = () => {
     headerTextColor: "#ababba",
     selectedHeaderTextColor: "#f42f42",
     inkBarColor: "#ebebf0",
-    activeInkBarColor: "#f42f42",
+    activeInkBarColor: "#ebebf0",
   };
 
   const tabBarStyles = `
-  font-size: 1rem;
   font-weight: 700;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
   overflow-x : scroll;
-  
+
   `;
 
   const tabItemCSS = `
-  width: 40vw;
-  flex-shrink: 0
+  width:auto;
+  flex-shrink:0;
+  padding:0px 10px;
   `;
 
   return (

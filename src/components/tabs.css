@@ -3,3 +3,12 @@
   flex-direction: column;
   gap: 4px;
 }
+
+@media only screen and (min-width: 768px) {
+  .css-ink19s > section {
+    width: 16.6666%;
+  }
+  .css-1q2aisx {
+    overflow: hidden !important;
+  }
+}
