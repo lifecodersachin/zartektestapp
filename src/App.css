@@ -1,0 +1,22 @@
+.App {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* padding: 8px; */
+}
+
+.page-container {
+  min-width: 320px;
+  /* border: 1px solid black; */
+}
+
+@media only screen and (min-width: 768px) {
+  .page-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    border-left: 1px solid #ababba;
+    border-right: 1px solid #ababba;
+    padding-top: 8px;
+  }
+}
