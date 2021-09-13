@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 let store = JSON.parse(localStorage.getItem("store")) ?? {}
+
 export const counterSlice = createSlice({
     name: "counter",
     initialState: store.counter || { count: 0 }

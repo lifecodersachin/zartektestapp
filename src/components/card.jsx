@@ -26,8 +26,6 @@ const Card = ({ dish }) => {
       dispatch(decrement());
       setDishCount((prevCount) => (prevCount -= 1));
     }
-    // if (dishCount > 0) {
-    // }
   };
   useEffect(() => {
     localStorage.setItem(`${dish.dish_id}`, JSON.stringify(dishCount));

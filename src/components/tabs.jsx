@@ -25,10 +25,6 @@ const FoodTabs = () => {
     dishCategories && setSelectedTab(dishCategories[0]?.menu_category);
   }, [dishCategories]);
 
-  useEffect(() => {
-    console.log("Dish Category", dishCategories);
-  });
-
   const changeTab = (updatedTab) => {
     console.log("updatedTab is", updatedTab);
     setSelectedTab(updatedTab?.label);
@@ -47,7 +43,6 @@ const FoodTabs = () => {
   font-weight: 700;
   border-bottom-width: 2px;
   overflow-x : scroll;
-
   `;
 
   const tabItemCSS = `
@@ -75,21 +70,6 @@ const FoodTabs = () => {
               </div>
             </Tab>
           ))}
-          {/* <Tab label="Tab 1" key={1}>
-            <div style={{ height: "500px", backgroundColor: "#F0D9FF" }}>
-              Tab 1 content
-            </div>
-          </Tab>
-          <Tab label="Tab 2" key={2}>
-            <div style={{ height: "500px", backgroundColor: "#BFA2DB" }}>
-              Tab 2 content
-            </div>
-          </Tab>
-          <Tab label="Tab 3" key={3}>
-            <div style={{ height: "500px", backgroundColor: "#7F7C82" }}>
-              Tab 3 content
-            </div>
-          </Tab> */}
         </Tabs>
       )}
       {isLoading && [1, 2, 3, 4].map((item, i) => <LoadingCard key={i} />)}
